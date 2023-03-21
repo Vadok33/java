@@ -1,0 +1,9 @@
+/**
+ * 
+ */
+/**
+ * @author vadok
+ *
+ */
+module java {
+}
