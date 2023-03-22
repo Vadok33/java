@@ -1,9 +1,0 @@
-/**
- * 
- */
-/**
- * @author vadok
- *
- */
-module java {
-}
