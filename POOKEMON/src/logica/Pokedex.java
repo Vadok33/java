@@ -9,19 +9,19 @@ public class Pokedex {
 
 		//Crear objetos
 		
-		Bulbasaur pokemon1 = new Bulbasaur("001","Bulbasaur","0,7 m","6,9 kg","Semilla","Espesura");
-		Squirtle pokemon2 = new Squirtle("007","Squirtle","0.5 m","9,0 kg","Tortuguita","Mar Llamas");
-		Charmander pokemon3 = new Charmander("004","Charmander","0,6 m","8,5 kg","Lagartija","Torrente");
-		Pikachu pokemon4 = new Pikachu("025","Pikachu","0,4 m","6,0 kg","Ratón","Electricidad");
+		Bulbasaur pokemon1 = new Bulbasaur(001,"Bulbasaur",0.7,6.9,"Semilla","Espesura");
+		Squirtle pokemon2 = new Squirtle(007,"Squirtle",0.5,9.0,"Tortuguita","Mar Llamas");
+		Charmander pokemon3 = new Charmander(004,"Charmander",0.6,8.5,"Lagartija","Torrente");
+		Pikachu pokemon4 = new Pikachu(025,"Pikachu",0.4,6.0,"Ratón","Electricidad");
 		
 		
 		//Opcion de la pokedex
 		
 		int opcion = 0;
-		System.out.println("\n Bienvenido a la Pokedex \n Elija un pokemon \n");
+		System.out.println("\n\t Bienvenido a la Pokedex \n\t Elija un pokemon \n");
 		do {
 			
-			System.out.println("\n---------- \n1 - Burbasú\n2 - Squirting \n3 - Charmeleon \n4 - Pakichu");
+			System.out.println("\n\t---------- \n\t1 - Burbasú\n\t2 - Squirting \n\t3 - Charmeleon \n\t4 - Pakichu\n\t----------");
 			Scanner sc = new Scanner(System.in);
 			opcion = sc.nextInt();
 				
@@ -38,7 +38,7 @@ public class Pokedex {
 				pokemon1.atacarMordisco();
 				pokemon1.atacarDrenaje();
 				pokemon1.atacarParalizar();
-				System.out.println("\n--------\n"+ pokemon1.nombre+ "\n--------\n Num. Pokedex:"+ pokemon1.numPokedex+" \nCategoría:"+ pokemon1.categoria+" \nHabilidad:"+ pokemon1.habilidad+" \n Peso:"+ pokemon1.peso+" \nAtura:"+ pokemon1.altura+" \n");
+				System.out.println("\n\t--------\n\t"+ pokemon1.nombre+"\n\t--------\n\t Num. Pokedex:"+pokemon1.numPokedex+"\n\tCategoría:"+ pokemon1.categoria+"\n\tHabilidad:"+ pokemon1.habilidad+"\n\t Peso:"+pokemon1.peso+"\n\tAtura:"+ pokemon1.altura+"\n\t");
 				
 				
 			break;

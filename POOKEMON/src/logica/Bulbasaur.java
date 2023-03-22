@@ -18,7 +18,7 @@ public class Bulbasaur extends Pokemon implements IPlanta {
 		super();
 	
 	}
-	public Bulbasaur(String numPokedex, String nombre, String altura, String peso, String categoria, String habilidad) {
+	public Bulbasaur(int numPokedex, String nombre, double altura, double peso, String categoria, String habilidad) {
 		super(numPokedex, nombre, altura, peso, categoria, habilidad);
 	
 	}

@@ -19,7 +19,7 @@ public class Squirtle extends Pokemon implements IAgua {
 		super();
 	
 	}
-	public Squirtle(String numPokedex, String nombre, String altura, String peso, String categoria, String habilidad) {
+	public Squirtle(int numPokedex, String nombre, double altura, double peso, String categoria, String habilidad) {
 		super(numPokedex, nombre, altura, peso, categoria, habilidad);
 	
 	}

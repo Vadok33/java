@@ -4,10 +4,10 @@ public abstract class Pokemon {
 	
 	//Atributos
 
-	protected String numPokedex; 
+	protected int numPokedex; 
 	protected String nombre;
-	protected String altura;
-	protected String peso;
+	protected double altura;
+	protected double peso;
 	protected String categoria;
 	protected String habilidad;
 	
@@ -16,7 +16,7 @@ public abstract class Pokemon {
 	protected Pokemon() {
 		
 	}
-	protected Pokemon (String numPokedex,String nombre,String altura,String peso,String categoria,String habilidad) {
+	protected Pokemon (int numPokedex,String nombre,double altura,double peso,String categoria,String habilidad) {
 		this.numPokedex = numPokedex;
 		this.nombre = nombre;
 		this.altura = altura;
