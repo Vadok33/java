@@ -10,9 +10,9 @@ public class Pokedex {
 		//Crear objetos
 		
 		Bulbasaur pokemon1 = new Bulbasaur("001","Bulbasaur","0,7 m","6,9 kg","Semilla","Espesura");
-		//Pokemon pokemon2 = new Pokemon("007","Squirtle","0.5 m","9,0 kg","Tortuguita","Mar Llamas");
-		//Pokemon pokemon3 = new Pokemon("004","Charmander","0,6 m","8,5 kg","Lagartija","Torrente");
-		//Pokemon pokemon4 = new Pokemon("025","Pikachu","0,4 m","6,0 kg","Ratón","Electricidad");
+		Squirtle pokemon2 = new Squirtle("007","Squirtle","0.5 m","9,0 kg","Tortuguita","Mar Llamas");
+		Charmander pokemon3 = new Charmander("004","Charmander","0,6 m","8,5 kg","Lagartija","Torrente");
+		Pikachu pokemon4 = new Pikachu("025","Pikachu","0,4 m","6,0 kg","Ratón","Electricidad");
 		
 		
 		//Opcion de la pokedex
@@ -45,17 +45,34 @@ public class Pokedex {
 			
 			
 			case 2: 
-				;
+				pokemon2.atacarPlacaje();
+				pokemon2.atacarAraniazo();
+				pokemon2.atacarMordisco();
+				pokemon2.atacarHidro();
+				pokemon2.atacarBurbuja();
+				pokemon2.atacarPistola();
+				System.out.println("\n--------\n"+ pokemon2.nombre+ "\n--------\n Num. Pokedex:"+ pokemon2.numPokedex+" \nCategoría:"+ pokemon2.categoria+" \nHabilidad:"+ pokemon2.habilidad+" \n Peso:"+ pokemon2.peso+" \nAtura:"+ pokemon2.altura+" \n");
 			break;
 			
 		
 			case 3:
-				;
+				pokemon3.atacarPlacaje();
+				pokemon3.atacarAraniazo();
+				pokemon3.atacarMordisco();
+				pokemon3.atacarPunio();
+				pokemon3.atacarLanza();
+				pokemon3.atacarAscua();
+				System.out.println("\n--------\n"+ pokemon3.nombre+ "\n--------\n Num. Pokedex:"+ pokemon3.numPokedex+" \nCategoría:"+ pokemon3.categoria+" \nHabilidad:"+ pokemon3.habilidad+" \n Peso:"+ pokemon3.peso+" \nAtura:"+ pokemon3.altura+" \n");
 			break;
 			
 			
 			case 4:
-				;
+				pokemon4.atacarPlacaje();
+				pokemon4.atacarAraniazo();
+				pokemon4.atacarMordisco();
+				pokemon4.atacarImpac();
+				pokemon4.atacarPtrueno();
+				System.out.println("\n--------\n"+ pokemon4.nombre+ "\n--------\n Num. Pokedex:"+ pokemon4.numPokedex+" \nCategoría:"+ pokemon4.categoria+" \nHabilidad:"+ pokemon4.habilidad+" \n Peso:"+ pokemon4.peso+" \nAtura:"+ pokemon4.altura+" \n");
 				
 			break;
 			
