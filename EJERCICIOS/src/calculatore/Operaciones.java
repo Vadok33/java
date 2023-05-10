@@ -1,5 +1,7 @@
 package calculatore;
 
+import java.util.Scanner;
+
 public class Operaciones {
 
 	
@@ -8,25 +10,62 @@ public class Operaciones {
 	
 	//Metodos operadores
 	
-	public int suma (int num1, int num2) {
-		int resultado;
+	public  void  suma () {
+		
+		
+		
+		double resultado;
+		
+		Scanner sc=new Scanner (System.in);
+		double num1 = sc.nextDouble();
+		Scanner sc2=new Scanner (System.in);
+		double num2 = sc2.nextDouble();
+		
 		resultado = num1 + num2;
-		return resultado;
+		System.out.println(resultado);
+	}
+public void resta () {
+		
+		
+		
+		double resultado;
+		
+		Scanner sc=new Scanner (System.in);
+		double num1 = sc.nextDouble();
+		Scanner sc2=new Scanner (System.in);
+		double num2 = sc2.nextDouble();
+		
+		resultado = num1 - num2;
+		System.out.println(resultado);
 	}
 	
-	public int resta(int num1, int num2) {
-		int resultado;
-		resultado = num1 - num2;
-		return resultado;	
-	}
-	public int multi(int num1, int num2) {
-		int resultado;
-		resultado = num1 * num2;
-		return resultado;	
-	}
-	public int divi(int num1, int num2) {
-		int resultado;
-		resultado = num1 / num2;
-		return resultado;	
-	}
+public void multi () {
+	
+	
+	
+	double resultado;
+	
+	Scanner sc=new Scanner (System.in);
+	double num1 = sc.nextDouble();
+	Scanner sc2=new Scanner (System.in);
+	double num2 = sc2.nextDouble();
+	
+	resultado = num1 * num2;
+	System.out.println(resultado);
+}
+
+public void divi () {
+	
+	
+	
+	double resultado;
+	
+	Scanner sc=new Scanner (System.in);
+	double num1 = sc.nextDouble();
+	Scanner sc2=new Scanner (System.in);
+	double num2 = sc2.nextDouble();
+	
+	resultado = num1 / num2;
+	System.out.println(resultado);
+}
 }
