@@ -1,24 +1,20 @@
 package calculatore;
 
 import java.util.InputMismatchException;
+import java.text.DecimalFormat;
 import java.util.Scanner;
 
 public class Operaciones {
 
 	
-	
-	
-	
-	//Metodos operadores
-	
-	
+	//Método leer operandos y control de excepciones
 	
 	public static double leerNumero() {
 		
-		double num1 =0;
+		double num = 0;
 		Scanner sc=new Scanner (System.in);
 		try {
-		num1 = sc.nextDouble();
+		num = sc.nextDouble();
 		}
 		
 		catch(NumberFormatException e){
@@ -37,13 +33,14 @@ public class Operaciones {
 		}
 		catch(InputMismatchException e){
 			System.out.println("\n ERROR: Solo se permite operar con números");
-			//System.out.println("\n ERROR: "+ e.getMessage());	
+			System.out.println("\n ERROR: "+ e.getMessage());	
 		}
 		
 		
-		return num1;
+		return num;
 	}
 	
+	//Método sumar
 	
 	public static void suma () {
 		
@@ -54,8 +51,15 @@ public class Operaciones {
 		double num2 = leerNumero();
 		
 		resultado = num1 + num2;
-		System.out.println("\nEl resultado de la operacion es: "+ resultado);
+		
+		DecimalFormat formato = new DecimalFormat("#.00"); 
+		String resultadoFormateado = formato.format(resultado);
+		System.out.println("\nEl resultado de la operacion es: "+ resultadoFormateado);
 	}
+	
+	///Método restar
+	
+	
 	public static void resta () {
 		
 		double resultado;
@@ -65,8 +69,13 @@ public class Operaciones {
 		double num2 = leerNumero();
 			
 		resultado = num1 - num2;
-		System.out.println("\nEl resultado de la operacion es: "+ resultado);
+		DecimalFormat formato = new DecimalFormat("#.00"); 
+		String resultadoFormateado = formato.format(resultado);
+		System.out.println("\nEl resultado de la operacion es: "+ resultadoFormateado);
 	}
+	
+	
+	//Método multiplicar
 	
 	public static void multi () {
 	
@@ -77,9 +86,14 @@ public class Operaciones {
 		double num2 = leerNumero();
 		
 		resultado = num1 * num2;
-		System.out.println("\nEl resultado de la operacion es: "+ resultado);
+		DecimalFormat formato = new DecimalFormat("#.00"); 
+		String resultadoFormateado = formato.format(resultado);
+		System.out.println("\nEl resultado de la operacion es: "+ resultadoFormateado);
 }
 
+	
+	//Método dividir
+	
 	public static void divi () {
 		
 		double resultado;
@@ -89,6 +103,8 @@ public class Operaciones {
 		double num2 = leerNumero();
 
 		resultado = num1 / num2;
-		System.out.println("\nEl resultado de la operacion es: "+ resultado);
-	}
+		DecimalFormat formato = new DecimalFormat("#.00"); 
+		String resultadoFormateado = formato.format(resultado);
+		System.out.println("\nEl resultado de la operacion es: "+ resultadoFormateado);
+}
 }
