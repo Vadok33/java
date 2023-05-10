@@ -24,17 +24,16 @@ public class Main {
 		case 0:
 			break;
 		case 1:
-			System.out.println("Introduce los numeros que deseas sumar");
-			suma();
+			Operaciones.suma();
 			break;
 		case 2:
-			System.out.println("Introduce los numeros que deseas restar");
+			Operaciones.resta();
 			break;
 		case 3:
-			System.out.println("Introduce los numeros que deseas multiplicar");
+			Operaciones.multi();
 			break;
 		case 4:
-			System.out.println("Introduce los numeros que deseas dividir");
+			Operaciones.divi();
 			break;
 			default:
 				System.out.println("Debe seleccionar un operador");
