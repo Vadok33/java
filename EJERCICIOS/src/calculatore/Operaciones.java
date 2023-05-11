@@ -119,6 +119,24 @@ public class Operaciones {
 		DecimalFormat formato = new DecimalFormat("#.00"); 
 		String resultadoFormateado = formato.format(resultado);
 		System.out.println("\nEl resultado de la operacion es: "+ resultadoFormateado);
-		}
+		}}
+		
+	//Método exponencial
+		
+	public static void expon() {
+		
+		double resultado;
+		System.out.println("Introduce el primer valor");
+		double num1 = leerNumero();
+		System.out.println("Introduce el segundo valor");
+		double num2 = leerNumero();
+		
+		resultado = Math.pow(num1, num2);
+		DecimalFormat formato = new DecimalFormat("#.00"); 
+		String resultadoFormateado = formato.format(resultado);
+		System.out.println("\nEl resultado de la operacion es: "+ resultadoFormateado);
+		
+		
+		
 }
 }

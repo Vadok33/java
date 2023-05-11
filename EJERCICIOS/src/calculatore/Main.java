@@ -16,7 +16,7 @@ public class Main {
 		
 		do {
 			
-			System.out.println("\n\t0. Salir\n\t1. Sumar\n\t2. Restar\n\t3. Multiplicar\n\t4. Dividir");
+			System.out.println("\n\t0. Salir\n\t1. Sumar\n\t2. Restar\n\t3. Multiplicar\n\t4. Dividir\n\t5. Exponencial");
 			Scanner sc = new Scanner(System.in);
 			opcion = sc.nextInt();
 			
@@ -35,6 +35,9 @@ public class Main {
 			break;
 		case 4:
 			Operaciones.divi();
+			break;
+		case 5:
+			Operaciones.expon();
 			break;
 			default:
 				System.out.println("Debe seleccionar un operador");
