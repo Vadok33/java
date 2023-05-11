@@ -12,31 +12,38 @@ public class Operaciones {
 	public static double leerNumero() {
 		
 		double num = 0;
+		boolean valido = false; 
+		
+		
+		while(!valido) {
 		Scanner sc=new Scanner (System.in);
 		try {
 		num = sc.nextDouble();
+		valido = true;
+		
 		}
 		
-		catch(NumberFormatException e){
-			System.out.println("\n ERROR: Introduce un número");
-			System.out.println("\n ERROR: "+ e.getMessage());	
-		}
+		/*
+		 * catch(NumberFormatException e){
+		 * System.out.println("\n ERROR: Introduce un número");
+		 * System.out.println("\n ERROR: "+ e.getMessage()); }
+		 * 
+		 * catch(ArithmeticException e){
+		 * System.out.println("\n ERROR: Introduce un número");
+		 * System.out.println("\n ERROR: "+ e.getMessage()); }
+		 * 
+		 * catch(IllegalArgumentException e){
+		 * System.out.println("\n ERROR: Introduce un número");
+		 * System.out.println("\n ERROR: "+ e.getMessage()); }
+		 */
 		
-		catch(ArithmeticException e){
-			System.out.println("\n ERROR: Introduce un número");
-			System.out.println("\n ERROR: "+ e.getMessage());
-		}
-		
-		catch(IllegalArgumentException e){
-			System.out.println("\n ERROR: Introduce un número");
-			System.out.println("\n ERROR: "+ e.getMessage());
-		}
 		catch(InputMismatchException e){
-			System.out.println("\n ERROR: Solo se permite operar con números");
-			System.out.println("\n ERROR: "+ e.getMessage());	
+			System.out.println("\n ERROR: Introduzca un valor valido");
+			
+			
 		}
 		
-		
+		}
 		return num;
 	}
 	
@@ -102,9 +109,16 @@ public class Operaciones {
 		System.out.println("Introduce el divisor");
 		double num2 = leerNumero();
 
+		
+		
+		if (num2 == 0) {
+			System.out.println("\n ERROR: No se puede dividir entre 0");
+		} else {
+		
 		resultado = num1 / num2;
 		DecimalFormat formato = new DecimalFormat("#.00"); 
 		String resultadoFormateado = formato.format(resultado);
 		System.out.println("\nEl resultado de la operacion es: "+ resultadoFormateado);
+		}
 }
 }
