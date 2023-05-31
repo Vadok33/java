@@ -1,5 +1,6 @@
 package calculatore;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 import java.text.DecimalFormat;
 
@@ -10,6 +11,8 @@ public class Main {
 		
 		//Inicio del programa
 		int opcion = 0;
+		boolean corr = false;
+		
 		System.out.println("\n\t Calculatore\n*****************************\n\tÁlvaro Elena \n*****************************\n " );
 		
 		//Eleccion de operador
@@ -18,11 +21,15 @@ public class Main {
 			
 			System.out.println("\n\t0. Salir\n\t1. Sumar\n\t2. Restar\n\t3. Multiplicar\n\t4. Dividir\n\t5. Exponencial");
 			Scanner sc = new Scanner(System.in);
+			
 			opcion = sc.nextInt();
+			
+			
 			
 		switch (opcion) {
 		
 		case 0:
+			System.out.println("Gracias por usar el programa");
 			break;
 		case 1:
 			Operaciones.suma();
@@ -41,6 +48,8 @@ public class Main {
 			break;
 			default:
 				System.out.println("Debe seleccionar un operador");
+		
+		
 		}
 		}	
 			
@@ -54,6 +63,6 @@ public class Main {
 		
 		
 		
-	}
+	}}
 
-}
+

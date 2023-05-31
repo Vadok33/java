@@ -49,7 +49,7 @@ public class OrdenarArray {
             }
         }
         System.out.println();
-        System.out.println("Array ordenado de menor a mayor:" );
+        System.out.println("\nArray ordenado de menor a mayor:" );
         
         for (int num:miArray) {
             System.out.print("[" +num+ "]");

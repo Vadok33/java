@@ -23,26 +23,11 @@ public class Operaciones {
 		
 		}
 		
-		/*
-		 * catch(NumberFormatException e){
-		 * System.out.println("\n ERROR: Introduce un número");
-		 * System.out.println("\n ERROR: "+ e.getMessage()); }
-		 * 
-		 * catch(ArithmeticException e){
-		 * System.out.println("\n ERROR: Introduce un número");
-		 * System.out.println("\n ERROR: "+ e.getMessage()); }
-		 * 
-		 * catch(IllegalArgumentException e){
-		 * System.out.println("\n ERROR: Introduce un número");
-		 * System.out.println("\n ERROR: "+ e.getMessage()); }
-		 */
-		
 		catch(InputMismatchException e){
 			System.out.println("\n ERROR: Introduzca un valor valido");
 			
 			
-		}
-		
+			}
 		}
 		return num;
 	}
@@ -104,22 +89,28 @@ public class Operaciones {
 	public static void divi () {
 		
 		double resultado;
+		
+		
 		System.out.println("Introduce el dividendo");
 		double num1 = leerNumero();
+		
+		
 		System.out.println("Introduce el divisor");
 		double num2 = leerNumero();
 
 		
 		
-		if (num2 == 0) {
+		while (num2 == 0){
+			
 			System.out.println("\n ERROR: No se puede dividir entre 0");
-		} else {
+			num2 = leerNumero();
+		}
 		
 		resultado = num1 / num2;
 		DecimalFormat formato = new DecimalFormat("#.00"); 
 		String resultadoFormateado = formato.format(resultado);
 		System.out.println("\nEl resultado de la operacion es: "+ resultadoFormateado);
-		}}
+		}
 		
 	//Método exponencial
 		

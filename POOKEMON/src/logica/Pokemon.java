@@ -11,7 +11,16 @@ public abstract class Pokemon {
 	protected String categoria;
 	protected String habilidad;
 	
-	//Constructores
+	//Métodos abstractos
+	
+	
+	protected abstract void atacarPlacaje();
+	protected abstract void atacarAraniazo();
+	protected abstract void atacarMordisco();
+	
+	
+	
+	//Constructor
 	
 	protected Pokemon() {
 		
@@ -25,11 +34,6 @@ public abstract class Pokemon {
 		this.habilidad = habilidad;
 	}
 	
-	//Métodos abstractos
 	
-	
-	public abstract void atacarPlacaje();
-	public abstract void atacarAraniazo();
-	public abstract void atacarMordisco();
 	
 }
