@@ -31,7 +31,7 @@ public Double getlimite() {
     return limite;
 }
 
-public double getsaldo() {
+public Double getsaldo() {
     return saldo;
 }
 

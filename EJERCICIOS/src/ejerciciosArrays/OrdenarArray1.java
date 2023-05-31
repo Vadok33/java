@@ -6,6 +6,8 @@ public class OrdenarArray1 {
 
 	public static void main(String[] args) {
 		
+		//Mensaje bienvenida
+		
 		System.out.println("\n*** Programa desarrollado por Álvaro Elena***");
 
 		
@@ -22,7 +24,7 @@ public class OrdenarArray1 {
 		
 		Scanner entrada = new Scanner (System.in);
 		do {
-		System.out.println("Introduce el número total de elementos:");
+		System.out.println("\n\nIntroduce el número total de elementos:");
 		numElementos = entrada.nextInt();	
 		}
 		while (numElementos <= 0);
@@ -39,6 +41,16 @@ public class OrdenarArray1 {
 		}
 		
 		
+		
+		//Mostrar array sin ordenar
+		
+		 System.out.println("\nArray sin ordenar: ");
+	     for (int num: miArray) {
+	          System.out.print("\n[" +num+ "]");
+	          }
+		
+		
+	     
 		//Bucle ordenar array
 		
 		for (i = 0; i < miArray.length; i++) {
@@ -50,20 +62,24 @@ public class OrdenarArray1 {
                     menor=miArray[j];
                     miArray[j]=miArray[i];
                     miArray[i]= menor;
-                }
-                
+                } 
             }
         }
         
 		
 		
+		
 		//Mostrar Array ordenado
-        System.out.println("Array ordenado de menor a mayor:" );
+		
+        System.out.println("\n\nArray ordenado de menor a mayor:" );
         for (int num:miArray) {
             System.out.print("\n[" +num+ "]");
         }
         entrada.close();
+        
+        
+        //Mensaje final
+        
         System.out.println("\n\n*** FIN DEL PROGRAMA ***");
 	}
-
 }
