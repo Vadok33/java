@@ -1,6 +1,6 @@
 package herbariopacket;
 
-public class Arbusto extends Planta implements IArbusto {
+public class Arbusto extends Planta {
 
 	//Atributos
 	
@@ -15,13 +15,10 @@ public class Arbusto extends Planta implements IArbusto {
 		super();
 		
 	}
-	public Arbusto(String nCientifico, String nVulgar, String familia, String variedad, String tamanio,
+	public Arbusto(String ancho, String colorHojas, String follaje, String nCientifico, String nVulgar, String familia, String variedad, String tamanio,
 			String tiposHoja, String flores, String habitat, String geo, String clima, Boolean flor) {
 		super(nCientifico, nVulgar, familia, variedad, tamanio, tiposHoja, flores, habitat, geo, clima, flor);
 		
-	}
-	public Arbusto(String ancho, String colorHojas, String follaje) {
-		super();
 		this.ancho = ancho;
 		this.colorHojas = colorHojas;
 		this.follaje = follaje;
@@ -30,8 +27,9 @@ public class Arbusto extends Planta implements IArbusto {
 	//Métodos
 	
 	@Override
-	public void soyArbusto() {
-		System.out.println("Soy un Arbusto");
+	protected void soy() {
+		System.out.println("Soy un arbusto");
+	
 		
 	}
 	

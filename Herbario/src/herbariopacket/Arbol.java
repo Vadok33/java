@@ -1,11 +1,11 @@
 package herbariopacket;
 
-public class Arbol extends Planta implements IArbol{
+public class Arbol extends Planta{
 
 	//Atributos
-	String tipoTronco;
-	String radioTronco;
-	String colorHoja;
+	protected String tipoTronco;
+	protected String radioTronco;
+	protected String colorHoja;
 	
 	
 	
@@ -17,30 +17,30 @@ public class Arbol extends Planta implements IArbol{
 		super();
 	}
 	
-	public Arbol(String nCientifico, String nVulgar, String familia, String variedad, String tamanio, String tiposHoja,
+	public Arbol(String tipoTronco, String radioTronco, String colorHoja, String nCientifico, String nVulgar, String familia, String variedad, String tamanio, String tiposHoja,
 			String flores, String habitat, String geo, String clima, Boolean flor) {
 		super(nCientifico, nVulgar, familia, variedad, tamanio, tiposHoja, flores, habitat, geo, clima, flor);
 		
-	}
-	
-
-	public Arbol(String tipoTronco, String radioTronco, String colorHoja) {
-		super();
 		this.tipoTronco = tipoTronco;
 		this.radioTronco = radioTronco;
 		this.colorHoja = colorHoja;
 	}
+	
+
+	
 
 
 
 	//Métodos
 
+	
 
 	@Override
-	public void soyArbol() {
-		System.out.println("Soy un Arbol");
-		
+	protected void soy() {
+		System.out.println("Soy un arbol");
 	}
+	
+	
 	
 	
 	

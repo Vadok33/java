@@ -18,11 +18,12 @@ public abstract class Planta {
 	
 	//Constructor
 	
-	protected Planta() {
+	public Planta() {
 		
 	}
-	protected Planta(String nCientifico, String nVulgar, String familia, String variedad, String tamanio, String tiposHoja,
+	public Planta(String nCientifico, String nVulgar, String familia, String variedad, String tamanio, String tiposHoja,
 			String flores, String habitat, String geo, String clima, Boolean flor) {
+		
 		this.nCientifico = nCientifico;
 		this.nVulgar = nVulgar;
 		this.familia = familia;
@@ -40,9 +41,8 @@ public abstract class Planta {
 	
 
 
-	protected abstract void soyArbol();
-	protected abstract void soyHerbacea();
-	protected abstract void soyArbusto();
+	protected abstract void soy();
+	
 	
 	
 	
