@@ -24,11 +24,11 @@ public class Arbusto extends Planta {
 		this.follaje = follaje;
 	}
 	
-	//Métodos
+	//Método
 	
 	@Override
 	protected void soy() {
-		System.out.println("Soy un arbusto");
+		System.out.println("Soy un arbusto y estos son mis atributos: ");
 	
 		
 	}

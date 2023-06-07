@@ -27,10 +27,9 @@ public class InvertirCadena2 {
 		System.out.println("Cadena invertida: " + invertida);
 		
 		
-		
 		//Mensaje final
         
-        System.out.println("\n\n*** FIN DEL PROGRAMA *** (baque es )");
+        System.out.println("\n\n*** FIN DEL PROGRAMA ***");
 	}
 	
         public static String invertirCadena(String cadena) {

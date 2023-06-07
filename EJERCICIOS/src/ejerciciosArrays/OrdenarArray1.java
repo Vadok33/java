@@ -31,9 +31,12 @@ public class OrdenarArray1 {
 		
 		
 		
-		//Bucle introducir números
+		//Declaración de array
+		
 		
 		int[] miArray = new int [numElementos];
+		
+		//Declaración de los elementos del array
 		
 		for (i = 0; i < numElementos; i++) {
 			System.out.println("Introduce numero (" +(i+1)+ ") ");
@@ -66,7 +69,6 @@ public class OrdenarArray1 {
             }
         }
         
-		
 		
 		
 		//Mostrar Array ordenado

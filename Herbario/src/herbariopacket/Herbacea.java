@@ -15,7 +15,6 @@ public class Herbacea extends Planta{
 	String estacionFlor;
 	
 	
-	
 	//Constructor
 	
 	public Herbacea() {
@@ -36,12 +35,12 @@ public class Herbacea extends Planta{
 	}
 	
 	
-	//Métodos
+	//Método
 	
 	
 	@Override
 	protected void soy() {
-		System.out.println("Soy una herbacea");
+		System.out.println("Soy una herbacea y estos son mis atributos: ");
 		
 	}
 	

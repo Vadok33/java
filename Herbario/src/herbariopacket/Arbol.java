@@ -8,9 +8,6 @@ public class Arbol extends Planta{
 	protected String colorHoja;
 	
 	
-	
-	
-	
 	//Constructor
 	
 	public Arbol() {
@@ -27,17 +24,13 @@ public class Arbol extends Planta{
 	}
 	
 
-	
-
-
-
-	//Métodos
+	//Método
 
 	
 
 	@Override
 	protected void soy() {
-		System.out.println("Soy un arbol");
+		System.out.println("Soy un arbol y estos son mis atributos: ");
 	}
 	
 	

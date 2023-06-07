@@ -11,7 +11,7 @@ public class Main {
 		
 		//Inicio del programa
 		int opcion = 0;
-		boolean corr = false;
+		
 		
 		System.out.println("\n\t Calculatore\n*****************************\n\tÁlvaro Elena \n*****************************\n " );
 		

@@ -37,7 +37,7 @@ public abstract class Planta {
 		this.flor = flor;
 	}
 	
-	//Métodos Abstractos
+	//Método Abstracto
 	
 
 
